@@ -11,7 +11,7 @@ BASE_URL = 'https://www.federalreserve.gov/releases/h10/hist/'
 TABLE_XPATH = './/table[@class="statistics"]/tr'
 C_XPATH = './th/a[contains(@href, "dat")]/{}'
 F_URI = '../results/scraped_result_{}.{}'
-FEED_FORMAT = 'csv'
+FEED_FORMAT = 'JSON'
 
 
 class FrbSpider(scrapy.Spider):
